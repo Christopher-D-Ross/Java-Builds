@@ -1,8 +1,12 @@
 package CosmicBeing;
 
+import lombok.Data;
+
 import java.util.List;
 
+@Data
 public abstract class CosmicBeing {
+
     private String typeOfBeing;
 
     public List<String> energyResources;

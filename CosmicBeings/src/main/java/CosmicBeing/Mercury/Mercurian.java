@@ -16,6 +16,7 @@ public class Mercurian extends CosmicBeing implements HostileTakeover, CoExist {
         this.name = name;
         this.isFriendly = isFriendly;
         energyResources.add("Spice");
+        energyResources.add("Solar energy");
         abilities.add("High tolerance in extremely hot environments");
     }
 
@@ -29,7 +30,7 @@ public class Mercurian extends CosmicBeing implements HostileTakeover, CoExist {
     }
 
     @Override
-    public <T extends CosmicBeing> boolean canProvideBeneficialResources() {
+    public <T extends CosmicBeing> boolean canProvideBeneficialResources(T cosmicBeing) {
         return false;
     }
 
